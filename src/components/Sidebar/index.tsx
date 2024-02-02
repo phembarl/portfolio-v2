@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import style from './style.module.scss';
 import Image from 'next/image';
 import { merriweather } from '@/app/fonts';
