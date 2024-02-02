@@ -1,0 +1,23 @@
+.experienceSection {
+  margin-top: 5rem;
+
+  .resumeLink {
+    color: #b4b4b8;
+    font-size: 0.9rem;
+
+    &:hover {
+      color: #e94560;
+    }
+
+    &:hover {
+      .resumeArrow {
+        margin-bottom: initial;
+      }
+    }
+
+    .resumeArrow {
+      margin-bottom: -3px;
+      transition: all 0.2s;
+    }
+  }
+}
