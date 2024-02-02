@@ -18,7 +18,11 @@ a {
 }
 
 .colored-text {
-  color: #e94560;
+  color: $secondaryColor;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 @media (prefers-color-scheme: dark) {

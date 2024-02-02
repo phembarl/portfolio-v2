@@ -1,0 +1,15 @@
+.aboutSection {
+  line-height: 2;
+
+  .resumeLink {
+    color: #e94560;
+    border: 1px solid #e94560;
+    padding: 0.5rem;
+    transition: all 0.4s;
+
+    &:hover {
+      color: #fff;
+      background-color: #e94560;
+    }
+  }
+}

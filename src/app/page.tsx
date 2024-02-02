@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import About from '@/components/AboutSection';
 import styles from './page.module.scss';
 import Sidebar from '@/components/Sidebar';
 
@@ -7,7 +7,7 @@ export default function Home() {
     <main className={styles.main}>
       <Sidebar />
       <div>
-        <h1>My Portfolio</h1>
+        <About />
       </div>
     </main>
   );
