@@ -25,7 +25,7 @@ const Sidebar = () => {
           <h1 className={merriweather.className}>
             <span className="colored-text">Femi</span> Balogun
           </h1>
-          <p>Senior Front-end Engineer</p>
+          <p>Senior Software Engineer</p>
         </div>
 
         <ul className={style.nav}>

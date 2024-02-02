@@ -9,10 +9,11 @@ const About = () => {
 
       <p>
         Hi! I&apos;m <span className="colored-text bold">Femi Balogun</span> 👋🏽
-        I&apos;m a Software Engineer with about 6 years in the game, actively
-        involved in bringing various applications to life. I&apos;m all about
-        solving problems and getting things done, and I&apos;ve managed to
-        launch some cool projects along the way.
+        Welcome to my corner of the internet. <br /> I&apos;m a Software
+        Engineer with about 6 years in the game, actively involved in bringing
+        various applications to life. I&apos;m all about solving problems and
+        getting things done, and I&apos;ve managed to launch some cool projects
+        along the way.
         <br />
         <br />I love diving into the nitty-gritty of product life cycles and
         making things happen. What keeps me going? A mix of innovation,
