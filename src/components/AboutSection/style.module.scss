@@ -2,14 +2,14 @@
   line-height: 2;
 
   .resumeLink {
-    color: #e94560;
-    border: 1px solid #e94560;
+    color: #64ffda;
+    border: 1px solid #64ffda;
     padding: 0.5rem;
     transition: all 0.4s;
 
     &:hover {
-      color: #fff;
-      background-color: #e94560;
+      color: #000;
+      background-color: #64ffda;
     }
   }
 }

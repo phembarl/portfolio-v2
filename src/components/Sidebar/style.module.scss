@@ -49,7 +49,7 @@
 
   &.active,
   &:hover {
-    color: #e94560;
+    color: #64ffda;
 
     &::after {
       visibility: visible;
@@ -64,7 +64,7 @@
     bottom: -5px;
     left: 0;
     right: 0;
-    background-color: #e94560;
+    background-color: #64ffda;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s;
