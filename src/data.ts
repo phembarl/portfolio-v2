@@ -55,3 +55,28 @@ export const experience: Experience[] = [
     url: 'https://www.bookingsafrica.com',
   },
 ];
+
+export const skills: string[] = [
+  'React',
+  'Redux',
+  'Next.js',
+  'Vue.js',
+  'Pinia',
+  'HTML',
+  'CSS/SCSS',
+  'JavaScript',
+  'TypeScript',
+  'jQuery',
+  'Bootstrap',
+  'Docker',
+  'Git',
+  'REST API',
+  'GraphQL',
+  'Apollo',
+  'Jest',
+  'Enzyme',
+  'AWS',
+  'Jira',
+  'PostgreSQL',
+  'MongoDB',
+];

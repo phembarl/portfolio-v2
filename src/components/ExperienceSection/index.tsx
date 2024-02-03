@@ -11,9 +11,10 @@ import 'react-vertical-timeline-component/style.min.css';
 import { Icon } from '@iconify/react';
 import { experience } from '@/data';
 import style from './style.module.scss';
+import { memo } from 'react';
 
 const Experience = () => {
-  const { ref, inView, entry } = useInView({ threshold: 0.2 });
+  const { ref, inView, entry } = useInView({ threshold: 0.1 });
 
   return (
     <div className={style.experienceSection}>
@@ -82,4 +83,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default memo(Experience);
