@@ -13,7 +13,7 @@ import { experience } from '@/data';
 import style from './style.module.scss';
 
 const Experience = () => {
-  const { ref, inView, entry } = useInView({ threshold: 0.2 });
+  const { ref, inView, entry } = useInView({ threshold: 0.1 });
 
   return (
     <div className={style.experienceSection}>
