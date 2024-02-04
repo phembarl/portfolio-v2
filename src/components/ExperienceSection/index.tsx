@@ -17,7 +17,7 @@ const Experience = () => {
   const { ref, inView, entry } = useInView({ threshold: 0.1 });
 
   return (
-    <div className={style.experienceSection}>
+    <div className={`section-top-margin ${style.experienceSection}`}>
       <div style={{ lineHeight: '2' }}>
         <p>Experience</p>
         <h2 className={`colored-text ${merriweather.className}`}>
@@ -26,7 +26,7 @@ const Experience = () => {
       </div>
 
       <div ref={ref}>
-        <VerticalTimeline layout="1-column-left">
+        <VerticalTimeline>
           {experience.map(exp => (
             <VerticalTimelineElement
               key={uuidv4()}
@@ -66,19 +66,22 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-      <a
-        href="/resume.pdf"
-        target="_blank"
-        className={`bold ${style.resumeLink}`}
-      >
-        View Full Résumé{' '}
-        <Icon
-          icon="solar:arrow-right-up-linear"
-          width="16"
-          height="16"
-          className={style.resumeArrow}
-        />
-      </a>
+
+      <div className={style.resumeLinkContainer}>
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          className={`bold ${style.resumeLink}`}
+        >
+          View Full Résumé{' '}
+          <Icon
+            icon="solar:arrow-right-up-linear"
+            width="16"
+            height="16"
+            className={style.resumeArrow}
+          />
+        </a>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,55 @@
+.card {
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+
+  display: flex;
+  align-items: flex-start;
+  line-height: initial;
+  transition: all 0.3s;
+
+  .cardImage {
+    object-fit: cover;
+    border: 2px solid rgba(226, 232, 240);
+    border-radius: 0.25rem;
+    height: auto;
+  }
+
+  .textContent {
+    padding: 0 1.5rem;
+    padding-right: initial;
+  }
+
+  .cardDescription {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    opacity: 0.8;
+  }
+
+  .cardTags {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .linkArrow {
+    margin-bottom: -3px;
+    margin-left: -2px;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: rgba(218, 225, 241, 0.1);
+
+    .cardTitle {
+      color: #64ffda;
+    }
+
+    .cardDescription {
+      opacity: 1;
+    }
+
+    .linkArrow {
+      margin-bottom: initial;
+      margin-left: initial;
+    }
+  }
+}

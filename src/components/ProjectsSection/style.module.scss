@@ -1,0 +1,9 @@
+.projectsSection {
+  margin-top: 5rem;
+  line-height: 2;
+
+  .projectList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

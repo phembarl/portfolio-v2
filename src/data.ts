@@ -9,6 +9,14 @@ interface Experience {
   tech: string[];
 }
 
+interface Project {
+  title: string;
+  description: string;
+  imageUrl: string;
+  url?: string;
+  skills: string[];
+}
+
 export const experience: Experience[] = [
   {
     company: 'Andela',
@@ -79,4 +87,31 @@ export const skills: string[] = [
   'Jira',
   'PostgreSQL',
   'MongoDB',
+];
+
+export const projects: Project[] = [
+  {
+    title: 'Prospa',
+    description:
+      'This forward-thinking platform goes beyond traditional financial services, offering a streamlined and efficient approach to managing both banking and essential business operations.',
+    url: 'https://getprospa.com',
+    imageUrl: '/prospa.png',
+    skills: ['Next.js', 'React', 'JavaScript', 'BootStrap', 'AWS'],
+  },
+  {
+    title: 'Accelerate',
+    description:
+      "Accelerate is a platform encompassing the world's largest community of startups, experts (mentors, judges, speakers, and advisors), and sponsors within an active ecosystem of global equity-free, high-impact accelerator programs.",
+    url: 'https://accelerate.masschallenge.org/',
+    imageUrl: '/mc.png',
+    skills: ['React', 'JavaScript', 'jQuery', 'AWS'],
+  },
+  {
+    title: 'Edusko',
+    description:
+      'Edusko takes the hassle out of navigating educational choices, ensuring a streamlined and accessible process for parents seeking the best educational opportunities for their children',
+    url: 'https://www.edusko.com/',
+    imageUrl: '/edusko.png',
+    skills: ['React', 'JavaScript', 'jQuery', 'AWS'],
+  },
 ];
