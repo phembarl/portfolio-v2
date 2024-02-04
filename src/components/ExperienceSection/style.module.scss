@@ -1,5 +1,8 @@
 .experienceSection {
-  margin-top: 5rem;
+  .resumeLinkContainer {
+    display: flex;
+    justify-content: center;
+  }
 
   .resumeLink {
     color: #b4b4b8;

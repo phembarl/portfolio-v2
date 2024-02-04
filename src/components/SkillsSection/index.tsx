@@ -6,7 +6,7 @@ import { merriweather } from '@/app/fonts';
 
 const Skills = () => {
   return (
-    <div className={style.skillsSection}>
+    <div className="section-top-margin section-line-height">
       <p>Skills</p>
       <h2 className={`colored-text ${merriweather.className}`}>
         Recent technologies I&apos;ve worked with
