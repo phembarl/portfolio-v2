@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Image from 'next/image';
 import style from './style.module.scss';
 import Tag from '../Tag';
-import { merriweather } from '@/app/fonts';
+import { merriweather } from '@/styles/fonts';
 import { Icon } from '@iconify/react/dist/iconify.js';
 
 interface CardProps {

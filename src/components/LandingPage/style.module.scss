@@ -1,0 +1,82 @@
+.landingPage {
+  min-height: 100vh;
+  padding: 0 10rem;
+
+  .landingPageContent {
+    padding-top: 15%;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .textContent {
+    justify-self: start;
+  }
+
+  .name {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  .firstName {
+    color: #64ffda;
+  }
+
+  .profilePic {
+    object-fit: cover;
+    border-radius: 10px;
+    justify-self: end;
+  }
+
+  .role {
+    line-height: 1.5;
+    font-size: 2rem;
+    color: #64ffda;
+  }
+
+  .catchphrase {
+    line-height: 1.5;
+  }
+
+  .btnContainer {
+    margin-top: 5rem;
+  }
+
+  .btn {
+    color: #64ffda;
+    border: 1px solid #64ffda;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+    background: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+
+    &:hover {
+      color: #000;
+      background-color: #64ffda;
+    }
+  }
+
+  .btnArrow {
+    margin-left: 10px;
+  }
+
+  .socials {
+    transition: all 0.3s;
+
+    &:hover {
+      color: #64ffda;
+      padding-bottom: 5px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .nameBreak {
+      display: none;
+    }
+  }
+}

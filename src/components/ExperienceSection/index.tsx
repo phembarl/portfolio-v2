@@ -2,7 +2,7 @@
 
 import { useInView } from 'react-intersection-observer';
 import { v4 as uuidv4 } from 'uuid';
-import { merriweather } from '@/app/fonts';
+import { merriweather } from '@/styles/fonts';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -11,10 +11,17 @@ import 'react-vertical-timeline-component/style.min.css';
 import { Icon } from '@iconify/react';
 import { experience } from '@/data';
 import style from './style.module.scss';
-import { memo } from 'react';
+import { memo, useEffect, useState } from 'react';
 
 const Experience = () => {
   const { ref, inView, entry } = useInView({ threshold: 0.1 });
+
+  const [animationCount, setAnimationCount] = useState(0);
+
+  useEffect(() => {
+    setAnimationCount(animationCount + 1);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [inView]);
 
   return (
     <div className={`section-top-margin ${style.experienceSection}`}>
@@ -26,7 +33,7 @@ const Experience = () => {
       </div>
 
       <div ref={ref}>
-        <VerticalTimeline>
+        <VerticalTimeline animate={animationCount < 3}>
           {experience.map(exp => (
             <VerticalTimelineElement
               key={uuidv4()}
