@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { skills } from '@/data';
 import style from './style.module.scss';
 import Tag from '@/components/Tag';
-import { merriweather } from '@/app/fonts';
+import { merriweather } from '@/styles/fonts';
 
 const Skills = () => {
   return (

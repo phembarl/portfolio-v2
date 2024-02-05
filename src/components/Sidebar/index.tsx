@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import style from './style.module.scss';
 import Image from 'next/image';
-import { merriweather } from '@/app/fonts';
+import { merriweather } from '@/styles/fonts';
 import { Icon } from '@iconify/react';
 
 type ActiveTab = 'about' | 'experience' | 'projects';

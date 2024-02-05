@@ -1,5 +1,6 @@
-import { merriweather } from '@/app/fonts';
+import { merriweather } from '@/styles/fonts';
 import style from './style.module.scss';
+import Image from 'next/image';
 
 const About = () => {
   return (

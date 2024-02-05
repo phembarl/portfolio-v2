@@ -1,4 +1,4 @@
-import { Quicksand, Merriweather } from 'next/font/google';
+import { Quicksand, Merriweather, Chakra_Petch } from 'next/font/google';
 
 export const quicksand = Quicksand({
   weight: ['400', '600', '700'],
@@ -8,6 +8,12 @@ export const quicksand = Quicksand({
 
 export const merriweather = Merriweather({
   weight: ['400', '700'],
+  display: 'swap',
+  subsets: ['latin'],
+});
+
+export const chakraPetch = Chakra_Petch({
+  weight: ['400', '600', '700'],
   display: 'swap',
   subsets: ['latin'],
 });

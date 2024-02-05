@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { merriweather } from '@/app/fonts';
+import { merriweather } from '@/styles/fonts';
 import style from './style.module.scss';
 import Card from '@/components/Card';
 import { projects } from '@/data';

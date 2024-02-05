@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import '@/styles/globals.scss';
-import { quicksand } from './fonts';
+import { quicksand } from '../styles/fonts';
 
 export const metadata: Metadata = {
   title: 'Femi Balogun',
