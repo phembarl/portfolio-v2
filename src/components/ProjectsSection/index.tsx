@@ -18,6 +18,9 @@ const Projects = () => {
         <h2 className={`colored-text ${merriweather.className}`}>
           Recent Projects
         </h2>
+
+        <br />
+
         <div className={style.projectList}>
           {projects.map(p => (
             <Card
