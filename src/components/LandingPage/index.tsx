@@ -86,7 +86,7 @@ const Landing = () => {
         <div className={style.btnContainer}>
           <ScrollLink to="about">
             <button className={style.btn}>
-              Jump In{' '}
+              Meet Me{' '}
               <Icon
                 icon="ph:arrow-down"
                 width="20"

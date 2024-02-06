@@ -50,6 +50,25 @@ a {
   }
 }
 
+.btn {
+  color: #64ffda;
+  border: 1px solid #64ffda;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+  background: none;
+
+  &:hover {
+    color: #000;
+    background-color: #64ffda;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 3rem;
+  font-size: 0.9rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
