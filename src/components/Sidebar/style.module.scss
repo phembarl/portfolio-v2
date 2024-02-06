@@ -1,28 +1,17 @@
 .sidebar {
   height: 100%;
-  width: 30%;
+  width: 8%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #16213e;
   overflow-x: hidden;
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-
-  .topSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav {
-    margin-top: 50px;
-  }
+  justify-content: flex-end;
 
   ul {
     list-style: none;
@@ -34,49 +23,12 @@
   }
 }
 
-.profilepic {
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
+.socialIcon {
+  margin-bottom: 30px;
+  transition: all 0.3s;
 
-.sidebar ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 18px;
-  text-align: center;
-  position: relative;
-
-  &.active,
   &:hover {
     color: #64ffda;
-
-    &::after {
-      visibility: visible;
-      transform: scaleX(1);
-    }
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    height: 1px;
-    bottom: -5px;
-    left: 0;
-    right: 0;
-    background-color: #64ffda;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s;
+    padding-bottom: 5px;
   }
 }
-
-// /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-// @media screen and (max-height: 450px) {
-//   .sidenav {
-//     padding-top: 15px;
-//   }
-//   .sidenav a {
-//     font-size: 18px;
-//   }
-// }

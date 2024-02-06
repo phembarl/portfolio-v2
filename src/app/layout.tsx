@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import '@/styles/globals.scss';
 import { quicksand } from '../styles/fonts';
+import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
   title: 'Femi Balogun',
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={quicksand.className}>{children}</body>
+      <body className={quicksand.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
