@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Landing />
       <main className={styles.main}>
-        {/* <Sidebar /> */}
+        <Sidebar />
         <div>
           <About />
           <Skills />
