@@ -7,7 +7,9 @@ import style from './style.module.scss';
 const About = () => {
   return (
     <Element name="about">
-      <div className={`section-line-height ${style.aboutSection}`}>
+      <div
+        className={`section-top-margin section-line-height ${style.aboutSection}`}
+      >
         <p>About</p>
         <h2 className={`colored-text ${merriweather.className}`}>Who am I?</h2>
 

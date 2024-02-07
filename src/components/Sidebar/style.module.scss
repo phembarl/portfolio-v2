@@ -21,6 +21,10 @@
       padding: 6px 8px 30px 16px;
     }
   }
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .socialIcon {

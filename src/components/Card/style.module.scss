@@ -52,4 +52,16 @@
       margin-left: initial;
     }
   }
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+
+    .textContent {
+      padding-left: initial;
+    }
+
+    .cardImage {
+      margin-bottom: 1rem;
+    }
+  }
 }
