@@ -14,7 +14,7 @@ const ScrollLink = ({ to, children }: ScrollLinkProps) => {
       to={to}
       spy={true}
       smooth={true}
-      offset={-50}
+      offset={-90}
       duration={500}
     >
       {children}

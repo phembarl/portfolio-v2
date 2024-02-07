@@ -12,6 +12,15 @@
   }
 
   .contactText {
-    padding: 0 12rem;
+    width: 55%;
+    margin: auto;
+
+    @media (max-width: 900px) {
+      width: 70%;
+    }
+
+    @media (max-width: 600px) {
+      width: initial;
+    }
   }
 }
