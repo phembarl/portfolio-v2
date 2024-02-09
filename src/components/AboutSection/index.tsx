@@ -45,7 +45,7 @@ const About = () => {
           target="_blank"
           className={`bold ${style.resumeLink}`}
         >
-          View résumé
+          View Résumé
         </a>
       </motion.div>
     </Element>
