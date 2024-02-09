@@ -76,3 +76,10 @@ html {
   color-scheme: dark;
   background-color: $primaryColor;
 }
+
+@media (min-width: 1600px) {
+  body {
+    max-width: 1500px;
+    margin: auto;
+  }
+}
