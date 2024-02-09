@@ -4,10 +4,11 @@ import { Link } from 'react-scroll';
 
 interface ScrollLinkProps {
   to: string;
+  onClick?(): void;
   children: React.ReactNode;
 }
 
-const ScrollLink = ({ to, children }: ScrollLinkProps) => {
+const ScrollLink = ({ to, onClick, children }: ScrollLinkProps) => {
   return (
     <Link
       activeClass="active"
@@ -16,6 +17,7 @@ const ScrollLink = ({ to, children }: ScrollLinkProps) => {
       smooth={true}
       offset={-90}
       duration={500}
+      onClick={onClick}
     >
       {children}
     </Link>

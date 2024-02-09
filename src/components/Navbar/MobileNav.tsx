@@ -23,8 +23,8 @@ const MobileNav = () => {
       <ul>
         <li className={style.brand}>
           <ScrollLink to="home">
-            <Icon icon="fa6-solid:f" width="24" height="24" />
-            <Icon icon="fa6-solid:bold" width="24" height="24" />
+            <Icon icon="fa6-solid:f" width="20" height="20" />
+            <Icon icon="fa6-solid:bold" width="20" height="20" />
           </ScrollLink>
         </li>
       </ul>

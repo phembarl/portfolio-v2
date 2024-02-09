@@ -1,6 +1,6 @@
 .landingPage {
   min-height: 100vh;
-  padding: 0 10rem;
+  padding: 0 12rem;
 
   .landingPageContent {
     padding-top: 15%;
@@ -89,13 +89,11 @@
     }
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1240px) {
     padding: 0 5rem;
+  }
 
-    .name {
-      font-size: 6vw;
-    }
-
+  @media (max-width: 1024px) {
     .profilePic {
       display: none;
     }
@@ -111,6 +109,10 @@
     flex-direction: column;
     justify-content: center;
 
+    .name {
+      font-size: 6vw;
+    }
+
     .landingPageContent {
       padding-top: 0;
     }
@@ -121,7 +123,7 @@
   }
 
   @media (min-width: 1600px) {
-    padding-left: 18rem;
-    padding-right: 18rem;
+    padding-left: 23vw;
+    padding-right: 23vw;
   }
 }

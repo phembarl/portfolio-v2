@@ -2,17 +2,36 @@
 
 import { Icon } from '@iconify/react/dist/iconify.js';
 import ScrollLink from '../ScrollLink';
+import { motion } from 'framer-motion';
 
 import style from './style.module.scss';
 
+const navbarVariants = {
+  hidden: { opacity: 0, y: -200 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      damping: 10,
+      duration: 0.5,
+    },
+  },
+};
+
 const Navbar = () => {
   return (
-    <div className={`${style.navbar} navbar-global`}>
+    <motion.div
+      className={`${style.navbar} navbar-global`}
+      variants={navbarVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <ul>
         <li className={style.brand}>
           <ScrollLink to="home">
-            <Icon icon="fa6-solid:f" width="24" height="24" />
-            <Icon icon="fa6-solid:bold" width="24" height="24" />
+            <Icon icon="fa6-solid:f" width="20" height="20" />
+            <Icon icon="fa6-solid:bold" width="20" height="20" />
           </ScrollLink>
         </li>
       </ul>
@@ -33,7 +52,7 @@ const Navbar = () => {
           <ScrollLink to="contact">Contact</ScrollLink>
         </li>
       </ul>
-    </div>
+    </motion.div>
   );
 };
 

@@ -4,16 +4,21 @@ import React from 'react';
 import style from './style.module.scss';
 import { merriweather } from '@/styles/fonts';
 import { Element } from 'react-scroll';
+import { motion } from 'framer-motion';
+import { sectionVariants } from '@/helpers/variants';
 
 const Contact = () => {
   return (
     <Element name="contact">
-      <div
+      <motion.div
         className={`${style.contactSection} section-top-margin section-line-height`}
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
       >
-        <p className={style.contactEntryText}>Contact</p>
         <h2 className={`colored-text ${merriweather.className}`}>
-          Let&apos;s Get In Touch
+          Get In Touch
         </h2>
 
         <br />
@@ -32,7 +37,7 @@ const Contact = () => {
         >
           Hi Femi 👋
         </a>
-      </div>
+      </motion.div>
     </Element>
   );
 };
