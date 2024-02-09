@@ -112,6 +112,6 @@ export const projects: Project[] = [
       'Edusko takes the hassle out of navigating educational choices, ensuring a streamlined and accessible process for parents seeking the best educational opportunities for their children',
     url: 'https://www.edusko.com/',
     imageUrl: '/edusko.png',
-    skills: ['React', 'JavaScript', 'jQuery', 'AWS'],
+    skills: ['React', 'Node', 'Styled Components', 'AWS'],
   },
 ];

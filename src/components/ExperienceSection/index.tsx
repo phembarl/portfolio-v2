@@ -12,6 +12,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { Icon } from '@iconify/react';
 import { experience } from '@/data';
 import { Element } from 'react-scroll';
+import { motion } from 'framer-motion';
 
 import style from './style.module.scss';
 
@@ -19,6 +20,11 @@ const Experience = () => {
   const { ref, inView } = useInView({ threshold: 0.1 });
 
   const [animationCount, setAnimationCount] = useState(0);
+
+  const experienceVariants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+  };
 
   useEffect(() => {
     setAnimationCount(animationCount + 1);
@@ -28,12 +34,18 @@ const Experience = () => {
   return (
     <Element name="experience">
       <div className={`section-top-margin ${style.experienceSection}`}>
-        <div style={{ lineHeight: '2' }}>
+        <motion.div
+          style={{ lineHeight: '2' }}
+          variants={experienceVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           <p>Experience</p>
           <h2 className={`colored-text ${merriweather.className}`}>
             Where I&apos;ve Worked
           </h2>
-        </div>
+        </motion.div>
 
         <div ref={ref}>
           <VerticalTimeline animate={animationCount < 3}>
