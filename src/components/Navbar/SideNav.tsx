@@ -30,18 +30,26 @@ const SideNav = ({ showSideNav, closeSideNav }: SideNavProps) => {
         <div>
           <ul className={style.nav}>
             <li>
-              <ScrollLink to="about">About</ScrollLink>
+              <ScrollLink to="about" onClick={closeSideNav}>
+                About
+              </ScrollLink>
             </li>
 
             <li>
-              <ScrollLink to="experience">Experience</ScrollLink>
+              <ScrollLink to="experience" onClick={closeSideNav}>
+                Experience
+              </ScrollLink>
             </li>
 
             <li>
-              <ScrollLink to="projects">Projects</ScrollLink>
+              <ScrollLink to="projects" onClick={closeSideNav}>
+                Projects
+              </ScrollLink>
             </li>
             <li>
-              <ScrollLink to="contact">Contact</ScrollLink>
+              <ScrollLink to="contact" onClick={closeSideNav}>
+                Contact
+              </ScrollLink>
             </li>
           </ul>
         </div>

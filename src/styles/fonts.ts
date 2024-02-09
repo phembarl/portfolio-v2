@@ -10,28 +10,26 @@ export const quicksand = Quicksand({
   weight: ['400', '600', '700'],
   display: 'swap',
   subsets: ['latin'],
-});
-
-export const raleway = Raleway({
-  weight: ['400', '600', '700'],
-  display: 'swap',
-  subsets: ['latin'],
+  fallback: ['sans-serif'],
 });
 
 export const montserrat = Montserrat({
   weight: ['400', '600', '700'],
   display: 'swap',
   subsets: ['latin'],
+  fallback: ['sans-serif'],
 });
 
 export const merriweather = Merriweather({
   weight: ['400', '700'],
   display: 'swap',
   subsets: ['latin'],
+  fallback: ['sans-serif'],
 });
 
 export const chakraPetch = Chakra_Petch({
   weight: ['400', '600', '700'],
   display: 'swap',
   subsets: ['latin'],
+  fallback: ['sans-serif'],
 });

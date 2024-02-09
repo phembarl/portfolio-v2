@@ -2,13 +2,19 @@
 
 import { merriweather } from '@/styles/fonts';
 import { Element } from 'react-scroll';
+import { motion } from 'framer-motion';
 import style from './style.module.scss';
+import { sectionVariants } from '@/helpers/variants';
 
 const About = () => {
   return (
     <Element name="about">
-      <div
-        className={`section-top-margin section-line-height ${style.aboutSection}`}
+      <motion.div
+        className={`section-line-height ${style.aboutSection}`}
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
       >
         <p>About</p>
         <h2 className={`colored-text ${merriweather.className}`}>Who am I?</h2>
@@ -41,7 +47,7 @@ const About = () => {
         >
           View résumé
         </a>
-      </div>
+      </motion.div>
     </Element>
   );
 };

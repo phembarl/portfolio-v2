@@ -1,20 +1,40 @@
 'use client';
-// 'use server';
 
-import React, { useEffect } from 'react';
 import style from './style.module.scss';
 import { chakraPetch, montserrat } from '@/styles/fonts';
-import Image from 'next/image';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import ScrollLink from '../ScrollLink';
 import { Element } from 'react-scroll';
+import { motion } from 'framer-motion';
+
+const buttonVariants = {
+  initial: { y: 0 },
+  bounce: { y: [-30, 30], transition: { repeat: Infinity, duration: 1 } },
+  hover: { scale: 1.2, y: 0 },
+};
+
+const textVariants = {
+  hidden: { opacity: 0, x: -100 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+};
+
+const imageVariants = {
+  hidden: { opacity: 0, x: 100 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+};
 
 const Landing = () => {
   return (
     <Element name="home">
-      <div className={style.landingPage}>
+      <div className={`${style.landingPage}`}>
         <div className={style.landingPageContent}>
-          <div className={style.textContent}>
+          <motion.div
+            className={style.textContent}
+            variants={textVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
             <div className={`${style.name} ${montserrat.className}`}>
               <h1>
                 <span className={style.firstName}>Femi</span>{' '}
@@ -73,19 +93,36 @@ const Landing = () => {
                 />
               </a>
             </div>
-          </div>
-          <Image
+          </motion.div>
+
+          <motion.img
             src="/headshot.jpeg"
             alt="profile-pic"
             width={300}
             height={300}
             className={style.profilePic}
+            variants={imageVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
           />
         </div>
 
-        <div className={style.btnContainer}>
+        <motion.div
+          className={style.btnContainer}
+          variants={textVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           <ScrollLink to="about">
-            <button className={style.btn}>
+            <motion.button
+              className={style.btn}
+              variants={buttonVariants}
+              initial="initial"
+              animate="bounce"
+              whileHover="hover"
+            >
               Meet Me{' '}
               <Icon
                 icon="ph:arrow-down"
@@ -93,9 +130,9 @@ const Landing = () => {
                 height="20"
                 className={style.btnArrow}
               />
-            </button>
+            </motion.button>
           </ScrollLink>
-        </div>
+        </motion.div>
       </div>
     </Element>
   );

@@ -2,11 +2,21 @@
 
 import style from './style.module.scss';
 import { Icon } from '@iconify/react';
+import { motion } from 'framer-motion';
+
+const iconsVariants = {
+  hidden: { opacity: 0, y: 200 },
+  visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
+};
 
 const Sidebar = () => {
   return (
     <div className={style.sidebar}>
-      <div>
+      <motion.div
+        variants={iconsVariants}
+        initial="hidden"
+        whileInView="visible"
+      >
         <div>
           <a
             href="https://github.com/phembarl"
@@ -51,7 +61,7 @@ const Sidebar = () => {
             />
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
