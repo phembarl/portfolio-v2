@@ -7,6 +7,7 @@ import MobileNav from '@/components/Navbar/MobileNav';
 import { keywords } from '@/data';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://femibalogun.dev'),
   title: 'Femi Balogun',
   description:
     'Femi is a seasoned Software Engineer with about 6 years of experience actively engaged in full product life cycles, resulting in the successful launch of various applications',
