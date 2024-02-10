@@ -117,3 +117,25 @@ export const projects: Project[] = [
     skills: ['React', 'Node', 'Styled Components', 'AWS'],
   },
 ];
+
+export const keywords = [
+  'Femi Balogun',
+  'Femi',
+  'Balogun',
+  'phembarl',
+  'Software engineer',
+  'Frontend',
+  'Frontend engineer',
+  'Frontend developer',
+  'React',
+  'React developer',
+  'React.js',
+  'Reactjs',
+  'Next',
+  'Next.js developer',
+  'Next.js',
+  'Nextjs',
+  'Vue',
+  'Vue developer',
+  'Angular developer',
+];
