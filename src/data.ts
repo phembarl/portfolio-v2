@@ -116,6 +116,14 @@ export const projects: Project[] = [
     imageUrl: '/edusko.png',
     skills: ['React', 'Node', 'Styled Components', 'AWS'],
   },
+  {
+    title: 'Ramos',
+    description:
+      'Inspired by a popular design on dribble.com, dive into your data with style and ease, as every click and scroll reveals a visual treat, making analysis both informative and enjoyable.',
+    url: 'https://ramos-mp.vercel.app/',
+    imageUrl: '/ramos.png',
+    skills: ['Next.js', 'Tailwind', 'Framer Motion', 'Vercel'],
+  },
 ];
 
 export const keywords = [

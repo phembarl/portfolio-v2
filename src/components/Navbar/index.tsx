@@ -5,19 +5,7 @@ import ScrollLink from '../ScrollLink';
 import { motion } from 'framer-motion';
 
 import style from './style.module.scss';
-
-const navbarVariants = {
-  hidden: { opacity: 0, y: -200 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: 'spring',
-      damping: 10,
-      duration: 0.5,
-    },
-  },
-};
+import { navbarVariants } from '@/helpers/variants';
 
 const Navbar = () => {
   return (
