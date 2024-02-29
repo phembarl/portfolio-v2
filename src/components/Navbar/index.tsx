@@ -37,6 +37,9 @@ const Navbar = () => {
           <ScrollLink to="projects">Projects</ScrollLink>
         </li>
         <li className={style.navItem}>
+          <ScrollLink to="articles">Articles</ScrollLink>
+        </li>
+        <li className={style.navItem}>
           <ScrollLink to="contact">Contact</ScrollLink>
         </li>
       </ul>

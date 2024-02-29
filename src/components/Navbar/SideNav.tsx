@@ -46,6 +46,12 @@ const SideNav = ({ showSideNav, closeSideNav }: SideNavProps) => {
                 Projects
               </ScrollLink>
             </li>
+
+            <li>
+              <ScrollLink to="articles" onClick={closeSideNav}>
+                Articles
+              </ScrollLink>
+            </li>
             <li>
               <ScrollLink to="contact" onClick={closeSideNav}>
                 Contact

@@ -9,7 +9,7 @@
 
   .cardImage {
     object-fit: cover;
-    border: 2px solid rgba(226, 232, 240);
+    border: 2px solid rgba(226, 232, 240, 0.2);
     border-radius: 0.25rem;
     height: auto;
   }
@@ -36,6 +36,12 @@
     transition: all 0.2s;
   }
 
+  .cardDate {
+    color: #64ffda;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+
   &:hover {
     background-color: rgba(218, 225, 241, 0.1);
 
@@ -50,6 +56,10 @@
     .linkArrow {
       margin-bottom: initial;
       margin-left: initial;
+    }
+
+    .cardImage {
+      border: 2px solid rgba(226, 232, 240, 0.4);
     }
   }
 
