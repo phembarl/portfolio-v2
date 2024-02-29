@@ -17,6 +17,14 @@ interface Project {
   skills: string[];
 }
 
+interface Article {
+  title: string;
+  description: string;
+  imageUrl: string;
+  url?: string;
+  year: string;
+}
+
 export const experience: Experience[] = [
   {
     company: 'Andela',
@@ -73,11 +81,12 @@ export const skills: string[] = [
   'HTML',
   'CSS',
   'SASS',
+  'Tailwind',
+  'Bootstrap',
   'Responsive Design',
   'JavaScript',
   'TypeScript',
   'jQuery',
-  'Bootstrap',
   'Docker',
   'Git',
   'REST API',
@@ -111,10 +120,29 @@ export const projects: Project[] = [
   {
     title: 'Edusko',
     description:
-      'Edusko takes the hassle out of navigating educational choices, ensuring a streamlined and accessible process for parents seeking the best educational opportunities for their children',
+      'Edusko takes the hassle out of navigating educational choices, ensuring a streamlined and accessible process for parents seeking the best educational opportunities for their children.',
     url: 'https://www.edusko.com/',
     imageUrl: '/edusko.png',
     skills: ['React', 'Node', 'Styled Components', 'AWS'],
+  },
+  {
+    title: 'Ramos',
+    description:
+      'Inspired by a popular design on dribble.com, dive into your data with style and ease, as every click and scroll reveals a visual treat, making analysis both informative and enjoyable. Designed primarily for desktop.',
+    url: 'https://ramos-mp.vercel.app/',
+    imageUrl: '/ramos.png',
+    skills: ['Next.js', 'Tailwind', 'Animation', 'Vercel'],
+  },
+];
+
+export const articles: Article[] = [
+  {
+    title: 'My ESLint Adventure',
+    description:
+      'Some time back, I received an invitation to join Andela’s Bootcamp, which left me both thrilled and a bit anxious about what to expect...',
+    url: 'https://medium.com/@phembarl/my-eslint-adventure-bb312373d875/',
+    imageUrl: '/eslint.png',
+    year: '2019',
   },
 ];
 

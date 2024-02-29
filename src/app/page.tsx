@@ -6,6 +6,7 @@ import Skills from '@/components/SkillsSection';
 import Projects from '@/components/ProjectsSection';
 import Landing from '@/components/LandingPage';
 import Contact from '@/components/ContactSection';
+import Articles from '@/components/ArticlesSection';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <Skills />
           <Experience />
           <Projects />
+          <Articles />
           <Contact />
         </div>
       </main>
