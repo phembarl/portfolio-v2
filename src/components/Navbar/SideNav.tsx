@@ -48,13 +48,13 @@ const SideNav = ({ showSideNav, closeSideNav }: SideNavProps) => {
             </li>
 
             <li>
-              <ScrollLink to="articles" onClick={closeSideNav}>
-                Articles
+              <ScrollLink to="contact" onClick={closeSideNav}>
+                Contact
               </ScrollLink>
             </li>
             <li>
-              <ScrollLink to="contact" onClick={closeSideNav}>
-                Contact
+              <ScrollLink to="articles" onClick={closeSideNav}>
+                Blog
               </ScrollLink>
             </li>
           </ul>
