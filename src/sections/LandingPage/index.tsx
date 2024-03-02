@@ -3,7 +3,7 @@
 import style from './style.module.scss';
 import { chakraPetch, montserrat } from '@/styles/fonts';
 import { Icon } from '@iconify/react/dist/iconify.js';
-import ScrollLink from '../ScrollLink';
+import ScrollLink from '../../components/ScrollLink';
 import { Element } from 'react-scroll';
 import { motion } from 'framer-motion';
 

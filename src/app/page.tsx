@@ -1,12 +1,12 @@
-import About from '@/components/AboutSection';
+import About from '@/sections/AboutSection';
 import styles from './page.module.scss';
 import Sidebar from '@/components/Sidebar';
-import Experience from '@/components/ExperienceSection';
-import Skills from '@/components/SkillsSection';
-import Projects from '@/components/ProjectsSection';
-import Landing from '@/components/LandingPage';
-import Contact from '@/components/ContactSection';
-import Articles from '@/components/ArticlesSection';
+import Experience from '@/sections/ExperienceSection';
+import Skills from '@/sections/SkillsSection';
+import Projects from '@/sections/ProjectsSection';
+import Landing from '@/sections/LandingPage';
+import Contact from '@/sections/ContactSection';
+import Articles from '@/sections/ArticlesSection';
 
 export default function Home() {
   return (
@@ -19,8 +19,8 @@ export default function Home() {
           <Skills />
           <Experience />
           <Projects />
-          <Articles />
           <Contact />
+          <Articles />
         </div>
       </main>
     </>

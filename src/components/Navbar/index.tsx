@@ -37,10 +37,10 @@ const Navbar = () => {
           <ScrollLink to="projects">Projects</ScrollLink>
         </li>
         <li className={style.navItem}>
-          <ScrollLink to="articles">Articles</ScrollLink>
+          <ScrollLink to="contact">Contact</ScrollLink>
         </li>
         <li className={style.navItem}>
-          <ScrollLink to="contact">Contact</ScrollLink>
+          <ScrollLink to="articles">Blog</ScrollLink>
         </li>
       </ul>
     </motion.div>
