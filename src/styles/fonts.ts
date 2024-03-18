@@ -4,6 +4,7 @@ import {
   Chakra_Petch,
   Raleway,
   Montserrat,
+  Nixie_One,
 } from 'next/font/google';
 
 export const quicksand = Quicksand({
@@ -29,6 +30,13 @@ export const merriweather = Merriweather({
 
 export const chakraPetch = Chakra_Petch({
   weight: ['400', '600', '700'],
+  display: 'swap',
+  subsets: ['latin'],
+  fallback: ['sans-serif'],
+});
+
+export const nixieOne = Nixie_One({
+  weight: '400',
   display: 'swap',
   subsets: ['latin'],
   fallback: ['sans-serif'],
