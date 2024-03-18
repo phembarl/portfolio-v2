@@ -1,11 +1,11 @@
 'use client';
 
-import { Icon } from '@iconify/react/dist/iconify.js';
 import ScrollLink from '../ScrollLink';
 import { motion } from 'framer-motion';
 
 import style from './style.module.scss';
 import { navbarVariants } from '@/helpers/variants';
+import { nixieOne } from '@/styles/fonts';
 
 const Navbar = () => {
   return (
@@ -18,8 +18,7 @@ const Navbar = () => {
       <ul>
         <li className={style.brand}>
           <ScrollLink to="home">
-            <Icon icon="fa6-solid:f" width="20" height="20" />
-            <Icon icon="fa6-solid:bold" width="20" height="20" />
+            <span className={nixieOne.className}>FB</span>
           </ScrollLink>
         </li>
       </ul>
