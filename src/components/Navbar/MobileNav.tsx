@@ -7,7 +7,6 @@ import { motion } from 'framer-motion';
 
 import style from './mobileNav.module.scss';
 import SideNav from './SideNav';
-import { nixieOne } from '@/styles/fonts';
 import { navbarVariants } from '@/helpers/variants';
 
 const MobileNav = () => {
@@ -31,7 +30,8 @@ const MobileNav = () => {
       <ul>
         <li className={style.brand}>
           <ScrollLink to="home">
-            <span className={nixieOne.className}>FB</span>
+            <Icon icon="fa6-solid:f" width="20" height="20" />
+            <Icon icon="fa6-solid:bold" width="20" height="20" />
           </ScrollLink>
         </li>
       </ul>
