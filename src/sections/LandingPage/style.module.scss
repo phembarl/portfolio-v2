@@ -122,6 +122,16 @@
     padding: 0 2rem;
   }
 
+  @media (max-width: 280px) {
+    .role {
+      font-size: 1.2rem;
+    }
+
+    .catchphrase {
+      font-size: 1rem;
+    }
+  }
+
   @media (min-width: 1600px) {
     display: flex;
     flex-direction: column;
