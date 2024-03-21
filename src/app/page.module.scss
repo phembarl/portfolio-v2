@@ -1,6 +1,7 @@
 .main {
   padding: 0 12rem;
   padding-bottom: 12rem;
+  overflow-y: hidden;
 
   @media (max-width: 1024px) {
     padding-left: 4rem;

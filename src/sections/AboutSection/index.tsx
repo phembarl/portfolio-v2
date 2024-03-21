@@ -10,7 +10,7 @@ const About = () => {
   return (
     <Element name="about">
       <motion.div
-        className={`section-top-margin section-line-height ${style.aboutSection}`}
+        className={`section-line-height ${style.aboutSection}`}
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
